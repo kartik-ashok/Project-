@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./first.css">
+    <style>
+         @media only screen and (max-width: 600px) {
+            /* Adjust styles for mobile devices with a screen width of 600px or less */
+            .container {
+                width: 100%; /* Set the width to 100% for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="post">
+            <div class="x">
+                <p id="demo" style="padding:50px;">Never Give up</p>
+               
+            </div>
+            <div class="y">
+                <button onclick="fun()">Click</button>
+            </div>
+        </div>
+        <script>
+            function fun()
+            {
+                let x=document.getElementById('demo').innerHTML="“Love is not just a feeling; it’s a commitment to putting in the effort every single day.”"
+                    
+            }
+        </script>
+</body>
+</html>
+
+<!-- Output:->
+
+    NodeList(4) [h1.message, h1.message, h1.message, h1.message]
+
+    
+HTMLCollection(4) [h1.message, h1.message, h1.message, h1.message]
+-->
